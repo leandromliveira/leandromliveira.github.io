@@ -1,111 +1,133 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
-    <title>Portifólio Leandro Oliveira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Portfólio</title>
   </head>
   <body>
-    <section id="navbar">
-      <nav>
-        <ul id="navbarUl">
-          <li style="list-style: none" class="navbarIl">
-            <a style="text-decoration: none" href="#aboutMe">Quem sou eu</a>
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="#skills"
-              >Habilidades que mais me orgulho</a
-            >
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="#anotherSkills"
-              >Outras Habilidades</a
-            >
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="#portfolio"
-              >Portfólio de projetos no github</a
-            >
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="#like"
-              >videos que eu gosto</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section id="aboutMe">
-      <h1>Leandro Magalhães Oliveira</h1>
-      <img id="foto" src="foto.png" width="200px" />
-      <p>
-        Estudante de desenvolvimento Web na <strong>Trybe</strong> em transição
-        de profissão| Engenheiro Eletricista pela Unb
-      </p>
-      <div id="redesSociais">
+    <header id="header" class="header-container">
+      <div class="header">
+        <div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="checkbox">
+              <div class="trace"></div>
+              <div class="trace"></div>
+              <div class="trace"></div>
+            </label>
+            <div class="menu"></div>
+            <nav class="menu-items">
+              <ul>
+                <li class="item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="item">
+                  <a href="#sobre">Sobre</a>
+                </li>
+                <li class="item">
+                  <a href="#projects">Projetos</a>
+                </li>
+                <li class="item">
+                  <a href="#contact">Contato</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <h1>Leandro Oliveira</h1>
+      <h2>Front-end developer</h2>
+      <div class="social-media">
+        <a href="https://github.com/leandromliveira" target="_blank">Github</a>
         <a
           href="https://www.linkedin.com/in/leandro-oliveira-86189930/"
           target="_blank"
-          ><img src="Icones/linkedin.png" alt="Icone do Linkedin" />
-        </a>
-        <a href="https://github.com/leandromliveira" target="_blank"
-          ><img src="Icones/github.png" alt="Icone do Linkedin" />
-        </a>
+          >LinkedIn</a
+        >
       </div>
-    </section>
-    <section id="skills">
-      <h1>Caracteristicas que mais me orgulho</h1>
-      <ul>
-        <li>obstinação</li>
-        <li>comunicativo</li>
-        <li>colaboração</li>
-        <li><strong>empatia</strong></li>
-      </ul>
-    </section>
-    <section id="anotherSkills">
-      <h1>Outras Habilidades</h1>
-      <ul>
-        <li><em>Git</em></li>
-        <li>Javascript</li>
-        <li><strong>Typescript</strong></li>
-        <li>SQL</li>
-        <li>React</li>
-      </ul>
-    </section>
-    <section id="portfolio">
-      <h1>Portfólio de projetos no github</h1>
-      <ol>
-        <li><em>Projeto 1</em></li>
-        <li>
-          <strong>Projeto 2</strong>
-        </li>
-
-        <li>Projeto 3</li>
-        <li>Projeto 4</li>
-      </ol>
-    </section>
-    <section id="like">
-      <h1>videos que eu gosto</h1>
-      <div id="videos">
-        <iframe
-          src="https://www.youtube.com/embed/nKhPFcqhAdQ"
-          allowfullscreen
-          ng-show="showvideo"
-        ></iframe>
-        <iframe
-          id="segundo"
-          src="https://www.youtube.com/embed/52GkwgIubo4"
-          allowfullscreen
-          ng-show="showvideo"
-        ></iframe>
+    </header>
+    <main class="container">
+      <div id="sobre"></div>
+      <div id="projects">
+        <div class="card-container">
+          <a
+            href="http://leandromliveira.github.io/project-pixels-art"
+            target="_blank"
+            class="card"
+            id="project-one"
+          >
+            <div class="card-wrapper">
+              <h2>Pixel-Art</h2>
+              <p>Vem ver!</p>
+            </div>
+          </a>
+          <div class="card-text">
+            Com o Pixel Art você pode despertar o artista que existe dentro de
+            você.
+          </div>
+        </div>
+        <div class="card-container">
+          <a
+            href="https://leandromliveira.github.io/project-todo-list/"
+            target="_blank"
+            class="card"
+            id="project-two"
+          >
+            <div class="card-wrapper">
+              <h2>Todo-List</h2>
+              <p>Vem ver!</p>
+            </div>
+          </a>
+          <div class="card-text">
+            Com a lista de tarefas você pode colocar as atividades que você
+            deseja desempenhar durante o dia
+          </div>
+        </div>
+        <div class="card-container">
+          <a
+            href="https://leandromliveira.github.io/project-trybewarts/"
+            target="_blank"
+            class="card"
+            id="project-three"
+          >
+            <div class="card-wrapper">
+              <h2>Trybewarts</h2>
+              <p>Vem ver!</p>
+            </div>
+          </a>
+          <div class="card-text">
+            Venha para a escola de magia de Trybewarts onde você irá aprender
+            como funciona a mágica do javascript
+          </div>
+        </div>
+        <div class="card-container">
+          <a
+            href="https://leandromliveira.github.io/project-meme-generator/"
+            target="_blank"
+            class="card"
+            id="project-four"
+          >
+            <div class="card-wrapper">
+              <h2>Meme-Generator</h2>
+              <p>Vem ver!</p>
+            </div>
+          </a>
+          <div class="card-text">
+            Com o meme generator você pode memes muito divertidos para alegrar
+            as suas redes sociais
+          </div>
+        </div>
       </div>
-    </section>
+      <div id="contact"></div>
+    </main>
+    <footer class="footer">
+      Feito por Leandro Oliveira
+      <a href="#header">
+        <img src="./images/chevron-up.png" />
+      </a>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
